@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twój adres IP</title>
+</head>
+<body>
+    <h1>Twój adres IP</h1>
+    <p>Twój aktualny adres IP to: <span id="ip-address">Pobieranie adresu IP...</span></p>
+
+    <script>
+        // Pobranie adresu IP klienta za pomocą serwisu do pobierania adresu IP
+        fetch('https://api.ipify.org/?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip-address').textContent = data.ip;
+            })
+            .catch(error => {
+                console.error('Wystąpił błąd podczas pobierania adresu IP:', error);
+                document.getElementById('ip-address').textContent = 'Nie można pobrać adresu IP';
+            });
+    </script>
+</body>
+</html>
