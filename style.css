@@ -1,5 +1,17 @@
 body {font-family:Arial;}
-h1 { color:green;}
+body {background-color:#1F1F1F;}
+h1 {
+    color:rgb(15, 156, 199);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
 li {color:red;}
-p {color:aqua;}
-body {background-color: #000000;}
+img {
+    width: 620px; 
+    height: 360px; 
+    margin-left: 330px; 
+    margin-right: 330px;
+    padding: 10px;
+    display: flex;
+}
