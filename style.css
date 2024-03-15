@@ -22,14 +22,14 @@ body {background-color:#1F1F1F;}
     padding: 10px 60px 20px 60px
 }
 
-.linkstr2{
+.linkstr2 {
     color: gray;
     text-decoration: none;
     border: 2px solid rgb(255, 0, 0);
-    display: flex;
-    display: inline-block;
-    margin-top: 10px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: center; /* Wyśrodkowanie wertykalne */
+    padding: 1px; /* Dodatkowy padding */
+    position: absolute; /* Pozycjonowanie absolutne */
+    left: 40%;
+    right: 40%;
 }
