@@ -1,20 +1,35 @@
 body {font-family:Arial;}
 body {background-color:#1F1F1F;}
-h1 {
+.hd1 {
     color:rgb(15, 156, 199);
     justify-content: center;
     display: flex;
     align-items: center;
 }
-li {color:red;}
-img {
-    width: 650px; 
+.li1 {
+    color:red;
+    list-style: none;
+    padding: 0px;
+}
+.zdj {
+    max-width: 100%; 
     height: auto; 
-    padding: 10px;
     display: flex;
     margin: auto;
     justify-content: center;
 }
-section {
+.se1 {
     padding: 10px 60px 20px 60px
+}
+
+.linkstr2{
+    color: gray;
+    text-decoration: none;
+    border: 2px solid rgb(255, 0, 0);
+    display: flex;
+    display: inline-block;
+    margin-top: 10px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
